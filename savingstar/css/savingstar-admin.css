@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* CSS Document */
+.ss-about-header{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12pt;
+	width:80%;
+	margin: 0px 0px 20px 0px;
+}
+#ss-affiliate{
+	width:100%;
+	height:150px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.ss-affiliate-instructions{
+	float:left;
+	margin: 15px 0px 0px 40px;
+}
+.ss-affiliate-instructions p{
+	font-size:18pt;
+}
+.ss-affiliate-id-form, .ss-affiliate-id-form input, .ss-affiliate-id-form label{
+	text-align:center;
+	font-size:14pt;
+}
+.ss-affiliate-id-form{
+	float:left;
+	width:300px;
+	height:170px;
+	color:#3399cc;
+	border: dashed thick #3399cc;
+	background-color:#ffcc33;	
+}
+.ss-affiliate-id-form input{
+	width: 80%;
+	margin: 0px 0px 0px 0px;
+}
+
+/* ***************** */
+.ss-instructions{
+	width:80%;
+	height:300px;
+	margin: 50px 0px 25px 0px;
+	color:#3399cc;
+}
+.ss-instructions li{
+	border: groove medium #3399cc;
+	background-color:#ffcc33;
+	margin-bottom: 20px;
+}
+.ss-instructions p{
+	text-align:center;
+	font-size:18px;
+	font-style:oblique;
+	color:#3399cc;
+	margin: 10px 0px 10px 0px;
+}
+.ss-instructions h2{
+	margin: 0px 0px 10px 0px;
+	text-align:center;
+	color:#3399cc;
+	background-color:#CCC;
+	border: dashed thick #3399cc;
+}
+/* ***************** */
+#ss-shortcode-instructions, #ss-function-instructions, #ss-widget-instructions{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	width:100%;
+	border-collapse:collapse;
+}
+#ss-shortcode-instructions th, #ss-function-instructions th, #ss-widget-instructions th{
+	width:50%;
+	background-color:#CCC;
+}
+/*CREDITS */
+.madebysavingstar {
+	float:right;
+	display:block;
+	width:220px;
+	height:32px;
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:4px;
+}
+.madebysavingstar a {
+	font-size: 13px;
+	line-height: 15px;
+	font-weight: bold;
+	color:#3399cc;
+	text-decoration: none;
+	letter-spacing: -0.2pt;
+	text-align: right;
+	display: block;
+	margin-top: 0px;
+	margin-right: 36px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 4px;
+	padding-right: 6px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.madebysavingstar a span {
+	font-size:70%;
+}
+.madebysavingstar a:hover {
+	color:#3399cc;
+}
