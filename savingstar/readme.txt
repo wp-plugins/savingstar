@@ -59,7 +59,7 @@ Just do a normal upgrade.
 
 == Changelog ==
 
-= 0.1.1.2 (07.11.2011) =
+= 0.1.1.3 (21.11.2011) =
 * initial release
 
 == Usage Guides ==
