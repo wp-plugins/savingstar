@@ -8,12 +8,14 @@ Stable tag: "0.1.1.4"
 
 == Description ==
 
-<b>SavingStar</b> is a paperless way of saving with eCoupons that link to your existing grocery and drug store loyalty cards. Here&#8217;s how it works: after a one-time registration of your store cards, saving is quick and easy. Simply click the eCoupons you want on <a href="http://savingstar.com"><b>savingstar.com</b></a> or our iPhone&#174; or Android&#174; apps and we&#8217;ll link your eCoupons to all of your registered store cards. When you use your card at checkout like you normally do, your savings are automatically added to your <b>SavingStar</b> account. (Note: your grocery bill will stay the same.) Once your savings reach $5, you can pick your payout from a deposit into your bank or PayPal account, an Amazon gift card, or a donation to American Forests.
+<a href="https://savingstar.com">Grocery coupons</a> are incredibly popular. Make more money from your site by promoting SavingStar eCoupons to your readers. SavingStar is a paperless way of saving with eCoupons that link to your grocery and drug store loyalty cards. The SavingStar plugin enables you to easily display the most popular SavingStar eCoupons with links that take the user directly to that specific coupon. The plugin works with SavingStar's affiliate program enabling you to earn money when users register or redeem the eCoupons.
 
-= Features: =
-1. Display 3 banner sizes in post with shortcodes from SavingStar.com
-2. Allows for affiliate id to be used with banners
-3. Display 3 banner sizes from dropdown in widget from SavingStar.com
+Features:
+
+Choose from 3 sizes: 300x250, 160x600, and 120x600 
+Easily post the banners into a blog post, template or sidebar widget
+Widget automatically updates with new eCoupons
+
 
 
 == Installation ==
@@ -22,6 +24,10 @@ Stable tag: "0.1.1.4"
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Click on the SavingStar Menu Link in the Admin area
 4. Enter your affiliate ID and click save
+
+For complete instructions, please visit: http://savingstar.com/blog/savingstar-widget-instructions/
+
+
 
 == Remove plugin ==
 
@@ -38,19 +44,8 @@ It's best to use the build in delete function of wordpress. That way all the sto
 
 
 
-= How can I support you? =
+For any questions about SavingStar's affiliate program, please visit: http://savingstar.com/blog/join-savingstars-affiliate-program/
 
-
-
-= What is the plugin page?  =
-
-
-
-= Do you have other plugins?  =
-
-
-
-= Where do I post my feedback? =
 
 
 == Upgrade Notice ==
