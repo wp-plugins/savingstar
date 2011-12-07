@@ -1,7 +1,7 @@
 === SavingStar Plugin ===
-Contributors: savingstar.com
+Contributors: savingstar
 Donate link: 
-Tags: SavingStar, Banner Ads, Banner Display, Ad Management
+Tags: affiliate, coupon, coupons, grocery coupons, online coupons, SavingStar
 Requires at least: 2.8
 Tested up to: 3.2.1
 Stable tag: 1.0
