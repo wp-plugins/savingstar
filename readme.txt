@@ -4,7 +4,7 @@ Donate link:
 Tags: SavingStar, Banner Ads, Banner Display, Ad Management
 Requires at least: 2.8
 Tested up to: 3.2.1
-Stable tag: "0.1.1.4"
+Stable tag: 1.0
 
 == Description ==
 
@@ -54,11 +54,11 @@ Just do a normal upgrade.
 
 == Changelog ==
 
-= 0.1.1.3 (21.11.2011) =
+= 0.1 (21.11.2011) =
 * initial release
 
-= 0.1.1.4 (7.12.2011) =
-* update to address missing header issue
+= 1.0 (7.12.2011) =
+* official launch
 
 == Usage Guides ==
 1. To display iframe in post:
