@@ -3,7 +3,7 @@
 Plugin Name: SavingStar
 Plugin URI: http://savingstar.com
 Description: Shows Banners in your Website from Saving Star
-Version: 0.1.1.3
+Version: 1.0
 Author: SavingStar
 Author URI: http://savingstar.com
 License: GPL2
