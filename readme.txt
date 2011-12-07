@@ -12,9 +12,9 @@ Stable tag: 1.0
 
 Features:
 
-Choose from 3 sizes: 300x250, 160x600, and 120x600 
-Easily post the banners into a blog post, template or sidebar widget
-Widget automatically updates with new eCoupons
+* Choose from 3 sizes: 300x250, 160x600, and 120x600 
+* Easily post the banners into a blog post, template or sidebar widget
+* Widget automatically updates with new eCoupons
 
 
 
@@ -38,7 +38,7 @@ It's best to use the build in delete function of wordpress. That way all the sto
 
 == Screenshots ==
 
-= coming soon =
+1. Example Banner from SavingStar
 
 == Frequently Asked Questions ==
 
@@ -64,16 +64,22 @@ Just do a normal upgrade.
 1. To display iframe in post:
 
 Paste one of the following shortcodes in a post or page:
+
 [ss_display_iframe type="Medium Rectangle(300w x 250h)"]
+
 [ss_display_iframe type="Wide Skyscraper(160w x 600h)"]
+
 [ss_display_iframe type="Skyscraper(120w x 600h)"]
 
 if no attribute is passed then default iframe is Medium Rectangle(350w x 250h)
 
 2. Use shortcode in a PHP file (outside the post editor).
 Paste one of the following function calls in a template file:
-echo do_shortcode('[ss_display_iframe type="Medium Rectangle(300w x 250h)"]');
-echo do_shortcode('[ss_display_iframe type="Wide Skyscraper(160w x 600h)"]');
-echo do_shortcode('[ss_display_iframe type="Skyscraper(120w x 600h)"]');
+
+`<?php echo do_shortcode('[ss_display_iframe type="Medium Rectangle(300w x 250h)"]'); ?>`
+
+`<?php echo do_shortcode('[ss_display_iframe type="Wide Skyscraper(160w x 600h)"]'); ?>`
+
+`<?php echo do_shortcode('[ss_display_iframe type="Skyscraper(120w x 600h)"]'); ?>`
 
 3. Use widget to select banner size from dropdown and display in widget areas
