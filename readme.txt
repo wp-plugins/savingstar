@@ -4,7 +4,7 @@ Donate link:
 Tags: SavingStar, Banner Ads, Banner Display, Ad Management
 Requires at least: 2.8
 Tested up to: 3.2.1
-Stable tag: "0.1.1.3"
+Stable tag: "0.1.1.4"
 
 == Description ==
 
