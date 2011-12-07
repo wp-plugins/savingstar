@@ -39,6 +39,8 @@ It's best to use the build in delete function of wordpress. That way all the sto
 == Screenshots ==
 
 1. Example Banner from SavingStar
+2. Example Banner from SavingStar (scrolled)
+3. Example Banner from SavingStar (scrolled to bottom)
 
 == Frequently Asked Questions ==
 
