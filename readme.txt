@@ -62,6 +62,9 @@ Just do a normal upgrade.
 = 0.1.1.3 (21.11.2011) =
 * initial release
 
+= 0.1.1.4 (7.12.2011) =
+* update to address missing header issue
+
 == Usage Guides ==
 1. To display iframe in post:
 
