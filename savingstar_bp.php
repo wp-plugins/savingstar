@@ -3,7 +3,7 @@
 Plugin Name: SavingStar
 Plugin URI: http://savingstar.com
 Description: Shows Banners in your Website from Saving Star
-Version: 1.0
+Version: 1.1
 Author: SavingStar
 Author URI: http://savingstar.com
 License: GPL2
@@ -30,8 +30,8 @@ define( 'SSBP_IFRAME', 'http://savingstar.com/blog/sidebar/');//Sets iFrame src 
 /* -------------------------------------------------------------------------------------------------------------------------- */
 define( 'SSBP_PUGIN_NAME', 'SavingStar');
 define( 'SSBP_PLUGIN_DIRECTORY', 'savingstar');
-define( 'SSBP_CURRENT_VERSION', '0.1.1.2' );
-define( 'SSBP_CURRENT_BUILD', '2' );
+define( 'SSBP_CURRENT_VERSION', '1.1' );
+define( 'SSBP_CURRENT_BUILD', '1' );
 define( 'SSBP_DEBUG', false);	//Development Only
 
 // create custom plugin settings menu
@@ -50,16 +50,19 @@ function my_admin_head() {
 }
 function ssbp_activate() { // activating the default values
 	add_option('ss_mpid', '00');
+	add_option('ss_subid', '');
 }
 
 function ssbp_deactivate() { // deactivation
 	// needed for proper deletion of every option
 	//delete_option('ss_mpid');
+	//delete_option('ss_subid');
 }
 
 function ssbp_uninstall() { // uninstallation
 	# delete all data stored
 	delete_option('ss_mpid');
+	delete_option('ss_subid');
 }
 
 function ssbp_create_menu() {
@@ -75,6 +78,7 @@ function ssbp_create_menu() {
 }
 function ssbp_register_settings() { //register settings
 	register_setting( 'ssbp-settings-group', 'ss_mpid' );
+	register_setting( 'ssbp-settings-group', 'ss_subid' );
 }
 
 function ssbp_debug() { // check if debug is activated
@@ -89,6 +93,7 @@ function ss_display_iframe( $atts ) {
 	), $atts ) );
 	$size = esc_attr($type);
 	$mpid = get_option('ss_mpid');
+	$subid = get_option('ss_subid');
 	switch($size){
 		case 'Medium Rectangle(300w x 250h)':
 			$width = 300;
@@ -107,7 +112,7 @@ function ss_display_iframe( $atts ) {
 			$height = 250;
 	}
 	//return "<br />MPID:".get_option('ss_mpid')."<br />Type:".$size."<br />Width:".$width."<br />Height:".$height."<br />";
-return '<iframe src="'.SSBP_IFRAME.'?mpid='.$mpid.'&width='.$width.'&height'.$height.'" width="'.$width.'" height="'.$height.'" scrolling="no">
+return '<iframe src="'.SSBP_IFRAME.'?mpid='.$mpid.'&subid='.$subid.'&width='.$width.'&height'.$height.'" width="'.$width.'" height="'.$height.'" scrolling="no">
   		<p>Your browser does not support iframes.</p>
 		</iframe>';
 }
@@ -128,6 +133,7 @@ class SavingStar_Widget extends WP_Widget {
 		extract( $args );
 		$itype = empty($instance['itype']) ? 'Medium Rectangle(300w x 250h)' : $instance['itype'];
 		$mpid = get_option('ss_mpid');
+		$subid = get_option('ss_subid');
 		echo $before_widget;
 		/////////////////////////////////////////////////////////
 		switch($itype){
@@ -147,7 +153,7 @@ class SavingStar_Widget extends WP_Widget {
 				$width = 300;
 				$height = 250;
 		}
-		echo '<iframe src="'.SSBP_IFRAME.'?mpid='.$mpid.'&width='.$width.'&height'.$height.'" width="'.$width.'" height="'.$height.'" scrolling="no">
+		echo '<iframe src="'.SSBP_IFRAME.'?mpid='.$mpid.'&subid='.$subid.'&width='.$width.'&height'.$height.'" width="'.$width.'" height="'.$height.'" scrolling="no">
   		<p>Your browser does not support iframes.</p>
 		</iframe>';
 		/////////////////////////////////////////////////////////

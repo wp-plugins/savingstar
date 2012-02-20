@@ -25,10 +25,16 @@ if (newwindow.location && !newwindow.closed) {
         <?php settings_fields( 'ssbp-settings-group' ); ?>
         <table class="form-table">
             <tr valign="top">
-              <td><b><label for="ss_mpid">Enter Your Media Partner ID:</label></b></td>
+              <td><b><label for="ss_mpid">*Enter Your Media Partner ID:</label></b></td>
             </tr>
             <tr valign="top">
               <td><input type="text" name="ss_mpid" value="<?php echo get_option('ss_mpid'); ?>" /></td>
+            </tr>
+            <tr valign="top">
+              <td><b><label for="ss_subid">Enter Your SUBID:</label></b></td>
+            </tr>
+            <tr valign="top">
+              <td><input type="text" name="ss_subid" value="<?php echo get_option('ss_subid'); ?>" /></td>
             </tr>
         </table>
         <p class="submit">
@@ -37,7 +43,7 @@ if (newwindow.location && !newwindow.closed) {
     </form>
     </div>
     <div class="ss-affiliate-instructions">
-    <p>Don't know your Media Partner ID? <a href="javascript:popitup('<?php echo plugins_url('/images/Impact-Radius-Account-ID.png', __FILE__); ?>')">Click Here</a> for an example.</p>  <p>If you aren't joined to the SavingStar Affiliate program <a href="http://member.impactradius.com/advertiser-applycampaign-info/SavingStar.brand?c=758" target="_blank">join here</a>!</p>
+    <p>Don't know your Media Partner ID? <a href="javascript:popitup('<?php echo plugins_url('/images/Impact-Radius-Account-ID.png', __FILE__); ?>')">Click Here</a> for an example.</p>  <p>If you aren't joined to the SavingStar Affiliate program <a href="http://member.impactradius.com/advertiser-applycampaign-info/SavingStar.brand?c=758" target="_blank">join here</a>!</p><p>SUBID is an optional value that can be used for more refined reporting.</p>
     </div>
 </div>
 

@@ -3,8 +3,8 @@ Contributors: savingstar
 Donate link: 
 Tags: affiliate, coupon, coupons, grocery coupons, online coupons, SavingStar
 Requires at least: 2.8
-Tested up to: 3.2.1
-Stable tag: 1.0
+Tested up to: 3.3.1
+Stable tag: 1.1
 
 == Description ==
 
@@ -56,11 +56,18 @@ Just do a normal upgrade.
 
 == Changelog ==
 
-= 0.1 (21.11.2011) =
-* initial release
+= 1.1 (2.20.2012) =
+* added Subid Option Capabilities
 
 = 1.0 (7.12.2011) =
 * official launch
+
+= 0.1 (21.11.2011) =
+* initial release
+
+
+
+
 
 == Usage Guides ==
 1. To display iframe in post:
