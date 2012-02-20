@@ -8,7 +8,7 @@ Stable tag: trunk
 
 == Description ==
 
-<a href="https://savingstar.com">Grocery coupons</a> are incredibly popular. Make more money from your site by promoting SavingStar eCoupons to your readers. SavingStar is a paperless way of saving with eCoupons that link to your grocery and drug store loyalty cards. The SavingStar plugin enables you to easily display the most popular SavingStar eCoupons with links that take the user directly to that specific coupon. The plugin works with SavingStar's affiliate program enabling you to earn money when users register or redeem the eCoupons.
+<a href="https://savingstar.com">Grocery coupons</a> are incredibly popular. Make more money from your site by promoting SavingStar eCoupons to your readers. SavingStar is a paperless way of saving with eCoupons that link to your grocery and drug store loyalty cards. The SavingStar plugin enables you to easily display the most popular SavingStar eCoupons with links that take the user directly to that specific coupon. The plugin works with SavingStar's affiliate program enabling you to earn money when users register or redeem the eCoupons. 
 
 Features:
 
