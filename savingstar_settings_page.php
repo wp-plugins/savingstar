@@ -46,6 +46,7 @@ if (newwindow.location && !newwindow.closed) {
     <p>Don't know your Media Partner ID? <a href="javascript:popitup('<?php echo plugins_url('/images/Impact-Radius-Account-ID.png', __FILE__); ?>')">Click Here</a> for an example.</p>  <p>If you aren't joined to the SavingStar Affiliate program <a href="http://member.impactradius.com/advertiser-applycampaign-info/SavingStar.brand?c=758" target="_blank">join here</a>!</p><p>SUBID is an optional value that can be used for more refined reporting.</p>
     </div>
 </div>
+<div class="ss-clear"></div>
 
 <div class="ss-instructions">
 <h2>SavingStar Usage Instructions:</h2>
@@ -80,15 +81,15 @@ if (newwindow.location && !newwindow.closed) {
         </tr>
         <tr valign="top">
           <td>For a <b>Medium Rectangle(300w x 250h)</b>:</td>
-          <td><big>echo do_shortcode('[ss_display_iframe type="Medium Rectangle(300w x 250h)"]');</big></td>
+          <td><big>echo do_shortcode( '[ss_display_iframe type="Medium Rectangle(300w x 250h)"]' );</big></</td>
         </tr>
         <tr valign="top">
           <td>For a <b>Wide Skyscraper(160w x 600h)</b>:</td>
-          <td><big>echo do_shortcode('[ss_display_iframe type="Wide Skyscraper(160w x 600h)"]');</big></td>
+          <td><big>echo do_shortcode( '[ss_display_iframe type="Wide Skyscraper(160w x 600h)"]' );</big></td>
         </tr>
         <tr valign="top">
           <td>For a <b>Skyscraper(120w x 600h)</b>:</td>
-          <td><big>echo do_shortcode('[ss_display_iframe type="Skyscraper(120w x 600h)"]');</big></td>
+          <td><big>echo do_shortcode( '[ss_display_iframe type="Skyscraper(120w x 600h)"]' );</big></td>
         </tr>   
 </table>
 </li>

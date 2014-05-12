@@ -3,7 +3,7 @@
 Plugin Name: SavingStar
 Plugin URI: http://savingstar.com
 Description: Shows Banners in your Website from Saving Star
-Version: 1.1
+Version: 1.2
 Author: SavingStar
 Author URI: http://savingstar.com
 License: GPL2
@@ -30,7 +30,7 @@ define( 'SSBP_IFRAME', 'http://savingstar.com/blog/sidebar/');//Sets iFrame src 
 /* -------------------------------------------------------------------------------------------------------------------------- */
 define( 'SSBP_PUGIN_NAME', 'SavingStar');
 define( 'SSBP_PLUGIN_DIRECTORY', 'savingstar');
-define( 'SSBP_CURRENT_VERSION', '1.1' );
+define( 'SSBP_CURRENT_VERSION', '1.2' );
 define( 'SSBP_CURRENT_BUILD', '1' );
 define( 'SSBP_DEBUG', false);	//Development Only
 
@@ -70,7 +70,7 @@ function ssbp_create_menu() {
 	add_menu_page( 
 		__('SavingStar', ''),
 		__('SavingStar', ''),
-		0,
+		'read',
 		SSBP_PLUGIN_DIRECTORY.'/savingstar_settings_page.php',
 		'',
 		plugins_url('/images/ss-icon.png', __FILE__)
@@ -131,7 +131,7 @@ class SavingStar_Widget extends WP_Widget {
 	/** @see WP_Widget::widget */
 	function widget( $args, $instance ) {
 		extract( $args );
-		$itype = empty($instance['itype']) ? 'Medium Rectangle(300w x 250h)' : $instance['itype'];
+		$itype = !isset($instance['itype']) ? 'Medium Rectangle(300w x 250h)' : $instance['itype'];
 		$mpid = get_option('ss_mpid');
 		$subid = get_option('ss_subid');
 		echo $before_widget;
@@ -171,13 +171,16 @@ class SavingStar_Widget extends WP_Widget {
 	function form( $instance ) {
 		if ( $instance ) {
 			$itype = esc_attr( $instance[ 'itype' ] );
-		} ?>
+		}else{
+			$itype = 'Medium Rectangle(300w x 250h)';
+		}
+		?>
 		<p>
         <label for="<?php echo $this->get_field_id('itype'); ?>"><?php _e( 'Banner Size:' ); ?></label>
         <select name="<?php echo $this->get_field_name('itype'); ?>" id="<?php echo $this->get_field_id('itype'); ?>" class="widefat">
-            <option value="Medium Rectangle(300w x 250h)"<?php selected( $instance['itype'], 'Medium Rectangle(300w x 250h)' ); ?>><?php _e('Medium Rectangle (300w x 250h)'); ?></option>
-            <option value="Wide Skyscraper(160w x 600h)"<?php selected( $instance['itype'], 'Wide Skyscraper(160w x 600h)' ); ?>><?php _e('Wide Skyscraper (160w x 600h)'); ?></option>
-            <option value="Skyscraper(120w x 600h)"<?php selected( $instance['itype'], 'Skyscraper(120w x 600h)' ); ?>><?php _e( 'Skyscraper (120w x 600h)' ); ?></option>
+            <option value="Medium Rectangle(300w x 250h)"<?php selected( $itype, 'Medium Rectangle(300w x 250h)' ); ?>><?php _e('Medium Rectangle (300w x 250h)'); ?></option>
+            <option value="Wide Skyscraper(160w x 600h)"<?php selected( $itype, 'Wide Skyscraper(160w x 600h)' ); ?>><?php _e('Wide Skyscraper (160w x 600h)'); ?></option>
+            <option value="Skyscraper(120w x 600h)"<?php selected( $itype, 'Skyscraper(120w x 600h)' ); ?>><?php _e( 'Skyscraper (120w x 600h)' ); ?></option>
         </select>
 		</p>
 		<?php 

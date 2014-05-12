@@ -3,7 +3,7 @@ Contributors: savingstar
 Donate link: 
 Tags: affiliate, coupon, coupons, grocery coupons, online coupons, SavingStar
 Requires at least: 2.8
-Tested up to: 3.3.1
+Tested up to: 3.9.1
 Stable tag: 1.1
 
 == Description ==
@@ -55,6 +55,10 @@ For any questions about SavingStar's affiliate program, please visit: http://sav
 Just do a normal upgrade.
 
 == Changelog ==
+
+= 1.2 (30.4.2014) =
+* updated admin styles
+* fixed warnings and notices
 
 = 1.1 (20.2.2012) =
 * added Subid Option Capabilities
