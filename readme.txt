@@ -4,7 +4,7 @@ Donate link:
 Tags: affiliate, coupon, coupons, grocery coupons, online coupons, SavingStar
 Requires at least: 2.8
 Tested up to: 3.3.1
-Stable tag: trunk
+Stable tag: 1.1
 
 == Description ==
 
