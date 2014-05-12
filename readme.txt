@@ -56,7 +56,7 @@ Just do a normal upgrade.
 
 == Changelog ==
 
-= 1.1 (2.20.2012) =
+= 1.1 (20.2.2012) =
 * added Subid Option Capabilities
 
 = 1.0 (7.12.2011) =
